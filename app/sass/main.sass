@@ -153,12 +153,31 @@ input, textarea, select
 			font-family: "almoni-dl-aaa-bold"
 			line-height: 1.2
 			font-size: 48px
+			text-decoration: none
+			transition: all 0.4s ease
+			&:hover
+				text-decoration: none
+				color: black
 
 	.wrap-holder
 		display: flex
 		justify-content: center
-		align-items: center
-		margin: 0 -20px
+		//align-items: center
+		margin: 0 -20px 20px
+	//======tabs-settings======
+	.active
+		background: #e56621
+		color: white
+		span
+			color: white
+		a
+			color: white
+	.tabs__content
+		display: none !important
+	.tabs__content.active
+		display: flex !important
+	//========================
+
 	.left-section
 		width: 50%
 		padding: 0 20px
@@ -281,10 +300,286 @@ input, textarea, select
 	.right-section
 		width: 50%
 		padding: 0 20px
+		h3
+			direction: rtl
+			color: #01013b
+			font-family: "almoni-dl-aaa-bold"
+			line-height: 1.2
+			font-size: 32px
+			padding-bottom: 20px
+			margin-bottom: 20px
+			position: relative
+			&:after
+				content: ''
+				width: 70px
+				color: #05a0ab
+				position: absolute
+				border-bottom: 5px solid #05a0ab
+				bottom: 0
+				right: 0
+				z-index: 2
+				//transform: translateX(-50%)
+		p
+			direction: rtl
+			color: #4f4f4f
+			font-size: 18px
+			line-height: 1.2
+			font-family: "almoni-dl-aaa-regular"
+			span
+				font-family: "almoni-dl-aaa-bold"
+				display: block
+		.wrap-img
+			margin-top: 10px
+			width: 100%
+			background-size: contain
+			background-repeat: no-repeat
+			max-height: 800px
+			height: 100%
+	.text-section
+		direction: rtl
+		font-family: "almoni-dl-aaa-regular"
+		line-height: 1.2
+		color: #565656
+		font-size: 18px
+		padding-bottom: 30px
+		.background-holder
+			background-image: url(../img/background-holder.png)
+			background-size: cover
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 11px
+		p
+			margin: 10px 0
+			span
+				font-family: "almoni-dl-aaa-bold"
+		h4
+			font-family: "almoni-dl-aaa-bold"
+			font-size: 26px
+			color: #000246
+		.first-block
+			margin-bottom: 35px
+		.wrap-button
+			margin-bottom: 25px
+			.button
+				background: #24b2c5
+				height: 60px
+				border-radius: 35px
+				color: white
+				text-decoration: none
+				font-family: "almoni-dl-aaa-bold"
+				font-size: 32px
+				line-height: 1.2
+				position: relative
+				transition: all 0.3s ease
+				&:hover
+					text-decoration: none
+					background: #247580
+					box-shadow: 1.414px 1.414px 50px 0 rgba(36, 117, 128, 0.3)
+				span
+					position: relative
+					&:after
+						content: ''
+						position: absolute
+						border: none
+						outline: 0
+						top: 50%
+						left: -30px
+						width: 13px
+						height: 13px
+						border-left: 3px solid white
+						border-top: 3px solid white
+						//z-index: 99999
+						transform: translateY(-50%) rotate(-135deg)
+						z-index: 99999
+		.second-block
 
 
+	//===============single flights========================
+
+.hlt-wraper.flights-page
+	.button-section
+		margin: 30px 0 70px
+	.left-section
+		order: 2
+		.wrap-text
+			margin-bottom: 20px
+		h3
+			direction: rtl
+			color: #01013b
+			font-family: "almoni-dl-aaa-bold"
+			line-height: 1
+			font-size: 32px
+			padding-bottom: 20px
+			margin-bottom: 20px
+			position: relative
+			&:after
+				content: ''
+				width: 70px
+				color: #05a0ab
+				position: absolute
+				border-bottom: 5px solid #05a0ab
+				bottom: 0
+				right: 0
+				z-index: 2
+		//transform: translateX(-50%)
+		p
+			direction: rtl
+			color: #4f4f4f
+			font-size: 18px
+			line-height: 1.2
+			font-family: "almoni-dl-aaa-regular"
+			span
+				font-family: "almoni-dl-aaa-bold"
+				display: block
+	.right-section
+		order: 1
+		.wrap-img
+			margin-top: 0
+			width: 100%
+			background-size: cover
+			height: 416px
+			background-position: center
 
 
+	.hotels-section
+		width: 100%
+		background: #f4f4f4
+		.main-holder
+			padding: 0 20px
+		h3
+			direction: rtl
+			color: #01013b
+			font-family: "almoni-dl-aaa-bold"
+			line-height: 1.2
+			font-size: 32px
+			padding-bottom: 20px
+			margin-bottom: 20px
+			margin-top: 30px
+			position: relative
+			&:after
+				content: ''
+				width: 70px
+				color: #05a0ab
+				position: absolute
+				border-bottom: 5px solid #05a0ab
+				bottom: 0
+				right: 0
+				z-index: 2
+		.items
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 30px -35px 60px
+			.item
+				list-style: none
+				padding: 0 35px
+				width: 25%
+				display: flex
+				flex-direction: column
+				align-items: center
+				text-align: center
+				direction: rtl
+			.wrap-list
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				flex-direction: column
+				background: white
+				min-height: 400px
+				max-width: 260px
+				text-decoration: none
+				&:hover
+					.stars
+						transition: all 0.3s ease
+						color: #da9100
+			.stars
+				position: absolute
+				top: 51%
+				color: white
+				font-size: 23px
+
+			.image
+				width: 100%
+				height: 230px
+				background-size: cover
+				background-position: center
+				display: block
+				margin-bottom: 20px
+			.wrap-title
+				font-family: "almoni-dl-aaa-bold"
+				line-height: 1.2
+				font-size: 23px
+				color: #01013b
+				margin-bottom: 15px
+				min-height: 55px
+				display: flex
+				justify-content: center
+				align-items: center
+			.description
+				font-family: "almoni-dl-aaa-regular"
+				line-height: 1.2
+				font-size: 16px
+				color: #7f7f7f
+				padding: 0 25px
+			.button
+				font-family: "almoni-dl-aaa-bold"
+				line-height: 1.2
+				font-size: 15px
+				color: white
+				background: #00b3cc
+				margin-bottom: 20px
+				margin-top: 20px
+				width: 80%
+				padding: 5px 0
+				border-radius: 25px
+				min-height: 30px
+				text-decoration: none
+				transition: all 0.3s ease
+				&:hover
+					text-decoration: none
+					background: #0dcae4
+					box-shadow: 1.414px 1.414px 50px 0px rgba(13, 202, 228, 0.3)
+		.wrap-button
+			text-align: center
+			display: flex
+			justify-content: center
+			align-items: center
+			font-family: "almoni-dl-aaa-bold"
+			line-height: 1.2
+			font-size: 16px
+			.button
+				text-decoration: none
+				background: #fcaf17
+				display: flex
+				justify-content: center
+				align-items: center
+				min-height: 50px
+				min-width: 200px
+				color: white
+				border-radius: 25px
+				margin-bottom: 30px
+				position: relative
+				transition: all 0.3s ease
+				&:hover
+					text-decoration: none
+					background: #da9100
+					box-shadow: 1.414px 1.414px 50px 0 rgba(255, 197, 84, 0.3)
+				&:after
+					content: ''
+					position: absolute
+					border: none
+					outline: 0
+					top: 50%
+					left: 10%
+					width: 11px
+					height: 11px
+					border-left: 3px solid white
+					border-top: 3px solid white
+					//z-index: 99999
+					transform: translateY(-50%) rotate(-45deg)
+					z-index: 99999
 
 
 
