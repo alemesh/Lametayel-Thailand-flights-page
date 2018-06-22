@@ -2,24 +2,152 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width : 1400px)
+    .hlt-wraper
+      .button-section
+        margin-top: 20px
+        margin-bottom: 30px
+        a
+          height: 50px
+          width: 255px
+          font-size: 28px
+      .left-section
+        .buttons
+          a, span
+            font-size: 15px
+            height: 50px
+          a:after, span:after
+            width: 40px
+            height: 40px
+        .items
+          .item
+            height: 135px
+          .image
+            font-size: 22px
+      .right-section
+        .wrap-img
+          max-height: 590px
+          background-size: cover
+          background-position: center
+      .text-section
+        .wrap-button
+          .button
+            height: 50px
+            font-size: 26px
+
+
+@media only screen and (max-width : 1300px)
+    .hlt-wraper
+      .left-section
+        .buttons
+          a, span
+            font-size: 20px
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+    .hlt-wraper
+      .hlt-menu-section
+        .hlt-top-wraper
+          .right-block
+            display: none
+          .left-block
+            width: 100%
+    .hlt-wraper.flights-page
+      .hotels-section
+        .items
+          margin: 0 -20px 60px
+          .item
+            padding: 0 20px
+      .left-section
+        .buttons
+          a:after, span:after
+            content: none
+
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+    .hlt-wraper
+      .wrap-holder
+        margin: 0 -20px
+      .left-section
+        .buttons
+          a, span
+            height: 45px
+          a:after, span:after
+            content: none
+          a:before, span:before
+            width: 9px
+            height: 14px
+      .right-section
+        .wrap-img
+          max-height: 555px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+    .hlt-wraper
+      .wrap-holder
+        flex-wrap: wrap
+      .left-section
+        width: 100%
+        order: 2
+      .right-section
+        width: 100%
+        order: 1
+        min-height: 750px
+        position: relative
+        margin-bottom: 30px
+        .wrap-img
+          height: 100%
 
+    .hlt-wraper.flights-page
+      .right-section
+        min-height: 400px
+        order: 2
+      .left-section
+        order: 1
+      .button-section
+        margin: 30px 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+    .hlt-wraper
+      .hlt-menu-section
+        .hlt-top-wraper
+          .main-holder
+            padding: 0 15px
+          a
+            //font-size: 14px
+            padding: 0
+          .left-block
+            justify-content: space-between
+      .wrap-header-section
+        .main-holder
+          padding: 0
+      .button-section, .wrap-text
+        padding: 0 20px
+
+      .left-section
+        .buttons
+          padding: 0 20px
+          a:after, span:after
+            content: ''
+            width: 30px
+            height: 30px
+            right: 4px
+          .button
+            width: 100%
+            margin-bottom: 10px
+            a
+              height: 40px
+      .right-section
+        min-height: 770px
+
+    .hlt-wraper.flights-page
+      .right-section
+        margin-bottom: 0
+
 
 
 /* Custom, iPhone Retina */
