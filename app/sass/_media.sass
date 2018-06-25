@@ -35,6 +35,10 @@
             height: 50px
             font-size: 26px
 
+    .hlt-wraper.search-page
+      .button-block
+        margin: 40px 0
+
 
 @media only screen and (max-width : 1300px)
     .hlt-wraper
@@ -63,7 +67,12 @@
           a:after, span:after
             content: none
 
-
+@media only screen and (max-width : 1100px)
+    .hlt-wraper.search-page
+      .items-wraper
+        .items
+          .image
+            height: 240px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -83,6 +92,15 @@
         .wrap-img
           max-height: 555px
 
+    .hlt-wraper.search-page
+      .items-wraper
+        .items
+          .text-block
+            p
+              font-size: 15px
+            h4
+              font-size: 28px
+              margin-bottom: 6px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -109,6 +127,36 @@
         order: 1
       .button-section
         margin: 30px 0
+
+    .hlt-wraper.search-page
+      .items-wraper
+        h3
+          display: flex
+          justify-content: center
+          &:after
+            right: 50%
+            transform: translateX(50%)
+
+        .items
+          .item
+            display: flex
+            justify-content: center
+          .wrap-item
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 320px
+            border-left: none
+          .text-block
+            h4
+              font-size: 26px
+      .button-block
+        justify-content: center
+        .button
+          font-size: 40px
+          span
+            height: 50px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
