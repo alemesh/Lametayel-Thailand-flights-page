@@ -2,7 +2,7 @@ $(function() {
 
 	// Custom JS
     (function($) {
-        $(function() {
+        // $(function() {
 
             $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
                 $(this)
@@ -20,7 +20,7 @@ $(function() {
                     .closest('div.tabs').find('h3.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
             });
 
-        });
+        // });
     })(jQuery);
     $(".menu-lisy").click(function() {
         // $(".tabs__caption").slideToggle();
