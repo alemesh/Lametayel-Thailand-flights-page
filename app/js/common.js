@@ -19,6 +19,11 @@ $(function() {
                     .addClass('active').siblings().removeClass('active')
                     .closest('div.tabs').find('h3.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
             });
+        $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('div.tabs').find('div.tabs__content2').removeClass('active').eq($(this).index()).addClass('active');
+        });
 
         // });
     })(jQuery);
@@ -66,11 +71,18 @@ $(function() {
 
 });
 
+$('.buttons .button').on('click', function (e) {
+    $('.slick-slider').slick('unslick');
+    // $('.hotels-section .items').addClass('slick-slider');
+    // $('.slick-slider').slick();
+    initSlickCarousel();
+});
 
 function initSlickCarousel() {
     jQuery('.slick-slider').slick({
         slidesToScroll: 1,
         slidesToShow: 4,
+        // rtl: true,
         // infinite: true,
         // adaptiveHeight: true,
         rows: 0,
